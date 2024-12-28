@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+section {
+  margin: 0px;
+  padding: 0px;
+}
+.marq {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-variation-settings: "GRAD" 0;
+}
+marquee {
+  width: 60%;
+  margin-left: 250px;
+}
+nav {
+  background-color: #ffd966;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  position: relative;
+}
+.logo > img {
+  position: absolute;
+}
+.nav > ul {
+  list-style: none;
+  display: flex;
+}
+.nav > ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  position: relative;
+  font-size: 1.05rem;
+}
+ul li a::after {
+  content: " ";
+  height: 3px;
+  width: 0%;
+  background-color: #c91c25;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn > button,
+.btn2 > button {
+  height: 35px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #c91c25;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1rem;
+  transition: 0.8s;
+}
+.btn > button:hover {
+  cursor: pointer;
+  background-color: #6a0e12;
+}
+.black_heading {
+  margin-top: -10px;
+  height: 200px;
+  background-color: #000;
+  color: #ffd966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  flex-direction: column;
+}
+.black_heading > h2 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.black_heading p,
+.black_heading div {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+svg {
+  margin: 0px 5px 0px 20px;
+}
+.Excitement {
+  background-color: #fcfcfc;
+}
+
+.Excitement > h1 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 50px;
+  text-align: center;
+}
+
+.Excitement p {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 20px 10px;
+}
+.bgDesign {
+  height: 400px;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Games {
+  height: 700px;
+}
+.Experiences {
+  background-color: #f2f2f2;
+  width: 80%;
+  margin: 100px auto;
+  padding-bottom: 70px;
+}
+.Experiences h1 {
+  text-align: center;
+  margin: auto;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  padding: 25px;
+}
+.Gamesrows {
+  width: 95%;
+  margin: auto;
+  /* background-color: red; */
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Gamesrows > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.Gamesrows > img:hover {
+  cursor: pointer;
+}
+.offers > h1 {
+  text-align: center;
+  margin: auto;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  padding: 25px;
+}
+.offerMain {
+  width: 70%;
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.offerimg {
+  width: 90%;
+}
+.offerimg > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.offertxt {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offertxt h3 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  padding: 10;
+}
+.offertxt p {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.05rem;
+  line-height: 35px;
+}
+.btn2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.map {
+  width: 80%;
+  margin: auto
+}
